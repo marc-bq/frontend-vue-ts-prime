@@ -77,4 +77,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <br>
 
-![alt text](https://drive.google.com/uc?id=1pM7UQcBkhLp5e6s_-XRxxdZBcHMkIJXC)
+![alt text]
