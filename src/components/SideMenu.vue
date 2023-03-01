@@ -1,5 +1,5 @@
 <template>
-  <div class="side-menu h-full flex flex-column flex-none" :class="{ 'w-15rem sm:w-15rem': showSideBar, 'sm:w-6rem lg:w-15rem ': !showSideBar }">
+  <div class="side-menu h-full flex flex-column flex-none text-color" :class="{ 'w-15rem sm:w-15rem': showSideBar, 'sm:w-6rem lg:w-15rem ': !showSideBar }">
     <h2 v-if="menuTitle" class="hidden lg:block px-3 pt-2 mb-1" :class="{ block: showSideBar }">{{ $t(menuTitle) }}</h2>
     <PanelMenu v-model:expandedKeys="expandedKeys" :model="items" class="menu-items hidden lg:block" :class="{ block: showSideBar }"></PanelMenu>
     <TieredMenu :model="items" class="menu-items" :class="{ hidden: showSideBar, 'hidden sm:block lg:hidden': !showSideBar }"></TieredMenu>
@@ -59,6 +59,9 @@ onMounted(() => {
 <style>
 .p-tieredmenu.p-component {
   border: none;
+}
+.side-menu a {
+  color: var(--text-color);
 }
 .p-tieredmenu span.p-menuitem-text {
   margin-top: 0.5rem;
@@ -125,8 +128,6 @@ ul.p-submenu-list {
 .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-panelmenu-icon {
   margin-right: 1.5rem !important;
 }
-.p-panelmenu-header-link .p-menuitem-text {
-}
 .p-sidebar-left {
   width: 15rem !important;
 }
@@ -141,7 +142,7 @@ ul.p-submenu-list {
   height: 100%;
 }
 .side-menu {
-  background: var(--second-color);
+  background: var(--surface-a);
 }
 .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
   border: none !important;

@@ -13,6 +13,7 @@ export const useMainStore = defineStore("main", {
     userId: "",
     userToken: "",
     menuTitle: "",
+    theme: "vela-orange",
   }),
   getters: {
     getUserId(): string {
@@ -23,7 +24,7 @@ export const useMainStore = defineStore("main", {
       }
     },
     userInitials(): string {
-      if (!this.user || !this.user.name) return "";
+      if (!this.user || !this.user.name) return "U";
       return this.user.name
         .split(" ")
         .map((word: string) => word[0])

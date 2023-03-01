@@ -7,7 +7,7 @@
         <div>
           <router-link to="/home" class="flex">
             <img class="hidden sm:block p-1" alt="logo" src="../assets/vuelogo.png" height="40" />
-            <div class="app-title font-bold text-m uppercase ml-2">
+            <div class="app-title font-bold text-m uppercase ml-2 text-color">
               <p class="hidden md:block">Frontend Boilerplate</p>
               <p class="md:hidden">FroBo</p>
             </div>
@@ -15,15 +15,17 @@
         </div>
       </div>
     </div>
-
-    <div
-      class="user-miniature w-2rem h-2rem border-circle flex align-items-center justify-content-center right-0 m-2 font-bold cursor-pointer"
-      aria-haspopup="true"
-      type="button"
-      aria-controls="user_menu"
-      @click="toggle"
-    >
-      {{ store.userInitials.toUpperCase() }}
+    <div class="flex">
+      <ThemeSwitcher />
+      <div
+        class="user-miniature w-2rem h-2rem border-circle flex align-items-center justify-content-center right-0 m-2 font-bold cursor-pointer"
+        aria-haspopup="true"
+        type="button"
+        aria-controls="user_menu"
+        @click="toggle"
+      >
+        {{ store.userInitials.toUpperCase() }}
+      </div>
     </div>
     <Menu id="user_menu" ref="menu" :model="userItems" :popup="true" />
   </nav>
@@ -34,6 +36,7 @@ import { ref } from "vue";
 import { useMainStore } from "../store";
 import Menu from "primevue/menu";
 import { storeToRefs } from "pinia";
+import ThemeSwitcher from "./ThemeSwitcher.vue";
 
 const store = useMainStore();
 const menu = ref();
@@ -71,11 +74,8 @@ function logout() {
 </script>
 
 <style scoped>
-.navbar {
-  background: var(--second-color);
-}
 .user-miniature {
-  background: var(--second-accent-color);
+  background: var(--accent-color);
 }
 .user-miniature:hover {
   animation-duration: 0.8s;
@@ -85,9 +85,8 @@ function logout() {
 }
 .navbar {
   padding: 0;
-  background: var(--second-color);
+  background: var(--surface-a);
   font-size: smaller;
-  /* border-bottom: 0.25rem solid var(--first-color); */
 }
 @keyframes beat {
   from {
@@ -95,7 +94,7 @@ function logout() {
   }
 
   to {
-    outline: 2px solid var(--second-accent-color);
+    outline: 2px solid var(--accent-color);
     outline-offset: 2px;
   }
 }

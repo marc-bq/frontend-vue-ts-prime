@@ -10,9 +10,12 @@ import { useToast } from "primevue/usetoast";
 
 import Toast from "primevue/toast";
 import DynamicDialog from "primevue/dynamicdialog";
+import switchTheme from "./utils/themeSwitcher.utils";
 
 const store = useMainStore();
 const toast = useToast();
+
+switchTheme(localStorage.getItem("lightMode") === "true");
 
 watch(
   () => store.errorMessage,
@@ -52,12 +55,7 @@ html {
 }
 :root {
   --main-color: 215deg;
-  --first-color: hsla(var(--main-color), 34%, 14%, 1);
-  --second-color: hsla(var(--main-color), 35%, 19%, 1);
-  --third-color: hsla(var(--main-color), 35%, 29%, 1);
-  --accent-color-base: "46deg, 100%, 65%";
-  --accent-color: hsla(var(--accent-color-base), 1);
-  --second-accent-color: hsla(22, 83%, 58%, 1);
+  --accent-color: hsla(22, 83%, 58%, 1);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -83,7 +81,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: var(--first-color);
+  background-color: var(--surface-b);
   font-family: var(--font-family);
   font-weight: 400;
   color: var(--text-color);

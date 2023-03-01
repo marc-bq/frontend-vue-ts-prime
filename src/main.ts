@@ -4,7 +4,7 @@ import App from "./App.vue";
 import "primeflex/primeflex.css";
 import "primeicons/primeicons.css";
 import "primevue/resources/primevue.min.css";
-import "primevue/resources/themes/vela-orange/theme.css";
+// import "primevue/resources/themes/vela-orange/theme.css";
 import ToastService from "primevue/toastservice";
 import DialogService from "primevue/dialogservice";
 import ConfirmationService from "primevue/confirmationservice";
@@ -13,6 +13,7 @@ import Ripple from "primevue/ripple";
 import i18n from "./i18n";
 import Vuelidate from "@vuelidate/core";
 import Tooltip from "primevue/tooltip";
+//import VueCookies from "vue-cookies";
 import { createPinia } from "pinia";
 
 const app = createApp(App);
