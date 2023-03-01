@@ -12,3 +12,4 @@ cypress/videos
 #VSCode
 .vscode
 .vscode/settings.json
+package-lock.json
