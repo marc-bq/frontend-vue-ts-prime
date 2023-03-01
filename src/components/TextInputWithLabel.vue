@@ -42,8 +42,10 @@ const props = defineProps({
 });
 const emit = defineEmits(["update:textInputValue"]);
 
-const debounceValidation: any = debounce(function (value) {
-  emit("update:textInputValue", value);
-  props.v?.$touch();
-}, props.debounceTime || 0);
+function debounceValidation(value: string | number) {
+  debounce(function () {
+    emit("update:textInputValue", value);
+    props.v?.$touch();
+  }, props.debounceTime || 0);
+}
 </script>

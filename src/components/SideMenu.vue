@@ -65,7 +65,6 @@ onMounted(() => {
 }
 .p-tieredmenu span.p-menuitem-text {
   margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 0.75) !important;
   text-align: center !important;
 }
 .p-tieredmenu .p-menuitem-text {
@@ -92,7 +91,6 @@ ul.p-submenu-list {
 .p-tieredmenu .p-menuitem-link .p-menuitem-icon {
   margin: 0 !important;
   font-size: 22px;
-  color: rgba(255, 255, 255, 0.75) !important;
 }
 .p-tieredmenu .p-menuitem {
   flex-direction: column;
