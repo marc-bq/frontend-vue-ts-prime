@@ -1,23 +1,30 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
-import Home from "../views/Home.vue";
+import Home from "../views/Home/Home.vue";
 import Administration from "../views/Administration/Administration.vue";
 import Users from "../views/Administration/Users.vue";
 import { useMainStore } from "../store";
-
+import Welcome from "../views/Home/Welcome.vue";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "Main",
     component: Main,
     meta: { requiresAuth: true },
     children: [
-      { path: "", redirect: "/home" },
+      { path: "", redirect: "/home/welcome" },
       {
         path: "/home",
         name: "Home",
         component: Home,
         meta: { requiresAuth: true },
+        children: [
+          {
+            path: "welcome",
+            component: Welcome,
+            meta: { requiresAuth: true },
+          },
+        ],
       },
 
       {

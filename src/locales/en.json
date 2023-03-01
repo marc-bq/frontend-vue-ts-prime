@@ -11,5 +11,9 @@
   "Error updating user": "Error updating user",
   "Delete": "Delete",
   "New": "New",
-  "Manage Users": "Manage users"
+  "Manage Users": "Manage users",
+  "text_here": "Text here...",
+  "validation_error": "Field has errors",
+  "validation_success": "Field is correct",
+  "example_field": "Example Field"
 }

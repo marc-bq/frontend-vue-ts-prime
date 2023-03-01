@@ -11,5 +11,9 @@
   "Error updating user": "Error al actualizar usuario",
   "Delete": "Borrar",
   "New": "Nuevo",
-  "Manage Users": "Gestionar usuarios"
+  "Manage Users": "Gestionar usuarios",
+  "text_here": "Texto aqui...",
+  "validation_error": "El campo tiene errores",
+  "validation_success": "El campo es correcto",
+  "example_field": "Campo de ejemplo"
 }

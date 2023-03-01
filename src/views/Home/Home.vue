@@ -12,9 +12,9 @@ export default {
 </script>
 
 <script setup lang="ts">
-import SideMenu from "../components/SideMenu.vue";
-import { useMainStore } from "../store";
-import i18n from "../i18n";
+import SideMenu from "../../components/SideMenu.vue";
+import { useMainStore } from "../../store";
+import i18n from "../../i18n";
 
 const store = useMainStore();
 const { t } = i18n.global;

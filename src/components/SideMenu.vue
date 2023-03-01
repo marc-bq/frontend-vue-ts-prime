@@ -3,7 +3,6 @@
     <h2 v-if="menuTitle" class="hidden lg:block px-3 pt-2 mb-1" :class="{ block: showSideBar }">{{ $t(menuTitle) }}</h2>
     <PanelMenu v-model:expandedKeys="expandedKeys" :model="items" class="menu-items hidden lg:block" :class="{ block: showSideBar }"></PanelMenu>
     <TieredMenu :model="items" class="menu-items" :class="{ hidden: showSideBar, 'hidden sm:block lg:hidden': !showSideBar }"></TieredMenu>
-    <p style="margin-top: auto !important" class="m-1 text-xs">{{ version }}</p>
   </div>
 </template>
 
@@ -13,7 +12,6 @@ import PanelMenu from "primevue/panelmenu";
 import { computed, onMounted, ref, watch } from "vue";
 import { useMainStore } from "../store";
 import { storeToRefs } from "pinia";
-import { version } from "../../package.json";
 
 const store = useMainStore();
 const expandedKeys = ref({});
