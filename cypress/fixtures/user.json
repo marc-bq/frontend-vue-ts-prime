@@ -1,0 +1,24 @@
+{
+    "data": {
+        "id": 1,
+        "createdAt": "2022-12-02T16:51:04.894Z",
+        "updatedAt": "2022-12-02T16:51:04.894Z",
+        "companyId": "01c8a430-1c95-4cf0-bb4d-ad893b6bff41",
+        "name": "marcbaldevey",
+        "surname": null,
+        "email": "marcbaldevey@inedit.com",
+        "phone": null,
+        "uuid": "28072487-3f94-437b-b811-56f77d000ea7",
+        "address": null,
+        "role": {
+            "id": 1,
+            "createdAt": "2022-12-02T16:50:38.850Z",
+            "updatedAt": "2022-12-02T16:50:38.850Z",
+            "companyId": "01c8a430-1c95-4cf0-bb4d-ad893b6bff41",
+            "name": "Admin",
+            "description": null,
+            "permissions": []
+        }
+    },
+    "message": "findOne"
+}

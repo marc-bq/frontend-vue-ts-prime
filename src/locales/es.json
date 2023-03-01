@@ -1,0 +1,15 @@
+{
+  "validations": {
+    "required": "El campo {property} es obligatorio."
+  },
+  "Home": "Inicio",
+  "loading-users-data-please-wait": "Cargando datos de usuarios, por favor espere...",
+  "no-users-found": "No se encontraron usuarios",
+  "Search": "Buscar",
+  "pagination-text": "Mostrando {first} a {last} de {totalRecords} entrada | \nMostrando {first} a {last} de {totalRecords} entradas",
+  "User updated successfully": "Usuario actualizado con éxito",
+  "Error updating user": "Error al actualizar usuario",
+  "Delete": "Borrar",
+  "New": "Nuevo",
+  "Manage Users": "Gestionar usuarios"
+}

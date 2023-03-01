@@ -1,0 +1,31 @@
+import { createApp } from "vue";
+import router from "./router";
+import App from "./App.vue";
+import "primeflex/primeflex.css";
+import "primeicons/primeicons.css";
+import "primevue/resources/primevue.min.css";
+import "primevue/resources/themes/vela-orange/theme.css";
+import ToastService from "primevue/toastservice";
+import DialogService from "primevue/dialogservice";
+import ConfirmationService from "primevue/confirmationservice";
+import PrimeVue from "primevue/config";
+import Ripple from "primevue/ripple";
+import i18n from "./i18n";
+import Vuelidate from "@vuelidate/core";
+import Tooltip from "primevue/tooltip";
+import { createPinia } from "pinia";
+
+const app = createApp(App);
+const pinia = createPinia();
+
+app.use(router);
+app.use(ToastService);
+app.use(DialogService);
+app.use(PrimeVue, { ripple: true });
+app.use(i18n);
+app.use(Vuelidate);
+app.use(pinia);
+app.use(ConfirmationService);
+app.directive("ripple", Ripple);
+app.directive("tooltip", Tooltip);
+app.mount("#app");

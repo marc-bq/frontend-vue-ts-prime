@@ -1,0 +1,7 @@
+{
+  "data": [
+    { "id": "01c8a430-1c95-4cf0-bb4d-ad893b6bff41", "createdAt": "2022-12-02T16:50:38.349Z", "updatedAt": "2022-12-09T12:09:13.113Z", "name": "Inèdit Print", "alias": "INDT" },
+    { "id": "1afb262d-a14e-4f3c-adae-f3bcec082cd7", "createdAt": "2022-12-07T16:05:26.186Z", "updatedAt": "2022-12-07T16:05:26.186Z", "name": "Test company", "alias": "TESTCO" },
+    { "id": "f751ebec-1073-434c-b7e5-0ca431d4dfb1", "createdAt": "2022-12-07T16:18:08.023Z", "updatedAt": "2022-12-07T16:18:08.023Z", "name": "qweqwewqeqwe", "alias": "QWEQWE" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "validations": {
+    "required": "The field {property} is required."
+  },
+  "Home": "Home",
+  "loading-users-data-please-wait": "Loading users data, plase wait...",
+  "no-users-found": "No users found",
+  "Search": "Search",
+  "pagination-text": "Showing {first} to {last} of {totalRecords} entry | Showing {first} to {last} of {totalRecords} entries",
+  "User updated successfully": "User updated successfully",
+  "Error updating user": "Error updating user",
+  "Delete": "Delete",
+  "New": "New",
+  "Manage Users": "Manage users"
+}

@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.vercel
+1-getting-started
+2-advanced-examples
+cypress/screenshots
+cypress/videos
+
+#VSCode
+.vscode
+.vscode/settings.json
