@@ -1,14 +1,7 @@
-# Web to Print Community
+# Frontend Vue+TS+PrimeVue Boilerplate
 
 ## About
 
-The W2PW is a virtual trading platform designed by EFI-Reggiani and Inèdit. It is used for trading and producing printed fabric or garment, connecting designers and brands, that may put items from their inventory up for sale, and printing mills.
-
-EFI-Reggiani offers a system, consisting of many apps for printing, which resides in the cloud and introduces several new features, designed to help customers stay better connected and more secure during their printing experience. For example, the designs are guaranteed to be transmitted with a high degree of confidentiality. The jobs travel in the workshop coded with cryptography, allowing only the real recipient to open/view/print the document.
-
-Additionally, the number of print copies is limited intrinsically. Therefore, no one can print copies of the document that were not intended.
-
-A unified Dashboard allows to manage the complete system.
 
 ## Index
 
