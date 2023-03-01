@@ -1,6 +1,15 @@
 # Frontend Vue+TS+PrimeVue Boilerplate
 
 ## About
+### Main features and stack
+- Vue3: An approachable, performant and versatile framework for building web user interfaces. [vuejs.org](https://vuejs.org/)
+- TypeScript: Strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. [typescriptlang.org](https://www.typescriptlang.org/)
+- PrimeVue: Rich set of open source native components for Vue. [primevue.org](https://primevue.org/setup)
+- PrimeFlex: Lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well [primefaces.org/primeflex](https://www.primefaces.org/primeflex/)
+- Vue i18n: Vue I18n is internationalization plugin for Vue.js [kazupon.github.io/vue-i18n](https://kazupon.github.io/vue-i18n/)
+- Vuelidate: Simple, but powerful, lightweight model-based validation for Vue.js 3 [vuelidate-next.netlify.app](https://vuelidate-next.netlify.app/)
+- Testing: Jest and Cypress
+- Linterns: ESLint and Prettier
 
 
 ## Index
