@@ -15,5 +15,7 @@
   "text_here": "Text here...",
   "validation_error": "Field has errors",
   "validation_success": "Field is correct",
-  "example_field": "Example Field"
+  "example_field": "Example Field",
+  "Cancel": "Cancel",
+  "Save": "Save"
 }

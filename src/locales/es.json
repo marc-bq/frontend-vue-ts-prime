@@ -15,5 +15,7 @@
   "text_here": "Texto aqui...",
   "validation_error": "El campo tiene errores",
   "validation_success": "El campo es correcto",
-  "example_field": "Campo de ejemplo"
+  "example_field": "Campo de ejemplo",
+  "Cancel": "Cancelar",
+  "Save": "Guardar"
 }
